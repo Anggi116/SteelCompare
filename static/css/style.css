@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f6fb;
+    color: #1e293b;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: #10243e;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 10px;
+    color: #94a9c3;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+
+nav a {
+    display: block;
+    color: #c5d1df;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #24476f;
+    color: white;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 40px;
+}
+
+.welcome {
+    color: #52749b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.description {
+    color: #718096;
+}
+
+.hero {
+    margin-top: 35px;
+    padding: 45px;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(120deg, #10243e, #315d89);
+}
+
+.hero p {
+    line-height: 1.7;
+    margin: 12px 0;
+}
+
+.hero h2 {
+    font-size: 27px;
+}
+
+button {
+    background: white;
+    color: #173656;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000008;
+}
+
+.card span {
+    color: #718096;
+}
+
+.card h2 {
+    color: #173656;
+    font-size: 32px;
+    margin: 15px 0 5px;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+footer {
+    margin-top: 50px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 25px;
+    }
+}

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteelCompare | Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>SteelCompare</h2>
+        <p class="subtitle">STEEL PROFILE ANALYSIS</p>
+
+        <nav>
+            <a class="active" href="/">Dashboard</a>
+            <a href="#">Data Profil Baja</a>
+            <a href="#">Perbandingan Profil</a>
+            <a href="#">Analisis Efisiensi</a>
+            <a href="#">Laporan</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <header>
+            <div>
+                <p class="welcome">SELAMAT DATANG</p>
+                <h1>Dashboard SteelCompare</h1>
+                <p class="description">
+                    Sistem pemilihan dan perbandingan profil baja.
+                </p>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div>
+                <p>STEEL PROFILE COMPARISON SYSTEM</p>
+                <h2>Pilih Profil Baja dengan Lebih Efisien</h2>
+                <p>
+                    Bandingkan berat, dimensi, dan karakteristik
+                    penampang profil baja dalam satu website.
+                </p>
+                <button>Mulai Perbandingan</button>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <span>Total Profil Baja</span>
+                <h2>0</h2>
+                <p>Profil tersimpan</p>
+            </div>
+
+            <div class="card">
+                <span>Total Kategori</span>
+                <h2>0</h2>
+                <p>Jenis profil baja</p>
+            </div>
+
+            <div class="card">
+                <span>Perbandingan</span>
+                <h2>0</h2>
+                <p>Analisis dilakukan</p>
+            </div>
+        </section>
+
+        <footer>
+            SteelCompare © 2026 | Steel Profile Analysis System
+        </footer>
+    </main>
+
+</body>
+</html>
